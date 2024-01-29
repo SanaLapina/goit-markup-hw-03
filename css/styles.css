@@ -40,9 +40,9 @@ button {
 .container {
     width: 100%;
     max-width: 1158px;
-    padding: 0 15px;
+    
     margin: 0 auto;
-}
+    padding: 0 15px;}
 
 
 /*======header======*/
@@ -189,6 +189,7 @@ button {
 .efective {
     padding-bottom: 120px;
     padding-top: 120px;
+
 }
 .visually-hidden {
     position: absolute;
@@ -201,16 +202,14 @@ button {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+    width: calc((100% - 72px) / 4);
     }
 
 .efective-list {
     display: flex;
-    gap: 24px;
-}
+    gap: 24px;;}
 
-.efective-item {
-    width: calc((100% - 72px) / 4);
-}
+.efective-item {}
 
 .efective-subtitel {
     color: #2E2F42;
@@ -251,8 +250,7 @@ button {
     display: flex;
     gap: 24px;
     padding: 0;
-    border-radius: 0px 0px 4px 4px;
-}
+    border-radius: 0px 0px 4px 4px;}
 
 .team-item {
     background-color: #FFFFFF;
