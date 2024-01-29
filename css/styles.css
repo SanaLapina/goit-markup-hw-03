@@ -4,7 +4,9 @@ body {
     color: #434455;
     background-color: #FFFFFF;
 }
-
+img{
+    display: block;
+}
 p,
 h1,
 h2,
@@ -38,8 +40,7 @@ button {
 .container {
     width: 100%;
     max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -49,6 +50,7 @@ button {
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #e7e9fc
 }
 
 .header-container {
@@ -58,6 +60,7 @@ button {
 
 .header-navigation {
     display: flex;
+    align-items: center;
 }
 
 .header-list {
@@ -80,7 +83,7 @@ button {
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 .header-logo {
@@ -93,7 +96,7 @@ button {
     text-transform: uppercase;
     display: flex;
     align-items: center;
-    margin-right: 72px;
+    margin-right: 76px;
 }
 
 .header-menu-link {
@@ -102,6 +105,7 @@ button {
     font-weight: 500;
     line-height: 1.50;
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
 .header-menu-link:hover,
@@ -139,10 +143,8 @@ button {
 }
 
 /*======order sevice======*/
-.titel {
-    padding-bottom: 120px;
-    padding-top: 120px;
-    background-color: #2E2F42;
+.titel { background-color: #2E2F42;
+    padding: 188px 0
 }
 
 
@@ -173,6 +175,7 @@ button {
     margin: 0 auto;
     margin-top: 48px;
     display: block;
+    min-width: 169px
 }
 
 
@@ -187,13 +190,27 @@ button {
     padding-bottom: 120px;
     padding-top: 120px;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    }
 
 .efective-list {
     display: flex;
     gap: 24px;
 }
 
-.efective-item {}
+.efective-item {
+    width: calc((100% - 72px) / 4);
+}
 
 .efective-subtitel {
     color: #2E2F42;
@@ -227,12 +244,14 @@ button {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px
 }
 
 .team-list {
     display: flex;
     gap: 24px;
     padding: 0;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-item {
@@ -241,6 +260,9 @@ button {
 
 .team-picture {
     margin-bottom: 32px;
+}
+.team-container{
+    padding: 32px 0
 }
 
 .team-name {
