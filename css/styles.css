@@ -206,10 +206,12 @@ button {
 
 .efective-list {
     display: flex;
-    gap: 24px;;}
+    gap: 24px;
+    padding: 0;
+ }
 
 .efective-item {
-    width: calc((100% - 72px) / 4)
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 .efective-subtitel {
@@ -250,12 +252,11 @@ button {
 .team-list {
     display: flex;
     gap: 24px;
-    padding: 0;
-    border-radius: 0px 0px 4px 4px;
-}
+    padding: 0;}
 
 .team-item {
     background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-picture {
