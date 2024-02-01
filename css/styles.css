@@ -55,6 +55,7 @@ button {
 
 .header-container {
     display: flex;}
+    
 
 .header-navigation {
     display: flex;
@@ -114,14 +115,14 @@ button {
 
 .header-adress {
     font-style: normal;
+    margin-left: 332px;
+    flex-grow: 1;
 
 }
 
 .header-adress-list {
     display: flex;
-    flex-grow: 1;
     align-items: center;
-    margin-left: 332px;
     justify-content: space-between;
     gap: 40px;
     padding: 0;
